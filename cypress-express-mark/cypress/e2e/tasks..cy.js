@@ -19,6 +19,10 @@ describe('tarefas', ()=>{
 
         //Não precisa do plugin xPath se usar as funções do Cypress
         cy.contains('button', 'Create').click()
+
+        cy.contains('main div p', 'Ler um livro de Node.js')
+            .should('be.visible')
+
     })
 
 })
